@@ -1,0 +1,370 @@
+{
+  "base": "http://127.0.0.1:36795/preview/",
+  "viewports": {
+    "320": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "overflow": false
+    },
+    "768": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "overflow": false
+    },
+    "1280": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "overflow": false
+    },
+    "320-connected": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "overflow": false
+    },
+    "1280-zoom200": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "overflow": false
+    }
+  },
+  "steps": [
+    "export loads from subpath; rounds rendered from mocked RPC",
+    {
+      "step": "resources requested",
+      "count": 10,
+      "sample": [
+        "assets/index-BU1lpPkc.js",
+        "assets/index-Oiu5-x1i.css",
+        "imd-deployment.json",
+        "abi/LaunchToken.json",
+        "abi/QuadraticFunding.json"
+      ]
+    },
+    {
+      "step": "screenshot desktop-1280-disconnected.jpg",
+      "bytes": 252545
+    },
+    {
+      "step": "axe disconnected-1280",
+      "violations": 0,
+      "passes": 47,
+      "incomplete": 0
+    },
+    {
+      "step": "screenshot tablet-768-disconnected.jpg",
+      "bytes": 237421
+    },
+    {
+      "step": "screenshot phone-320-disconnected.jpg",
+      "bytes": 219238
+    },
+    {
+      "step": "keyboard tab stops",
+      "stops": [
+        {
+          "tag": "a",
+          "text": "Skip to content",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "button",
+          "text": "Connect wallet",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "0xB5e8…f5A2",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "0xe03a…3543",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "Sepolia faucet",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "button",
+          "text": "Refresh",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "0x1111…1111",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "0x1111…1111",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "0x2222…2222",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "summary",
+          "text": "Activity (from contract events)",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "0x2222…2222",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "0x3333…3333",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "text": "0x2222…2222",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        },
+        {
+          "tag": "summary",
+          "text": "Activity (from contract events)",
+          "id": "",
+          "focusVisible": true,
+          "outline": "solid 2px rgb(47, 79, 184)",
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "step": "focus ring on primary button",
+      "text": "Connect wallet",
+      "focusVisible": true,
+      "outline": "solid 2px rgb(47, 79, 184) offset 2px"
+    },
+    {
+      "step": "screenshot desktop-focus-ring.jpg",
+      "bytes": 72904
+    },
+    "wrong network state visible",
+    {
+      "step": "screenshot desktop-wrong-network.jpg",
+      "bytes": 73524
+    },
+    {
+      "step": "switched after add",
+      "walletMethods": [
+        "eth_requestAccounts",
+        "eth_chainId",
+        "wallet_switchEthereumChain",
+        "wallet_addEthereumChain",
+        "wallet_switchEthereumChain",
+        "eth_chainId"
+      ],
+      "added": [
+        {
+          "chainId": "0xaa36a7",
+          "chainName": "Sepolia",
+          "rpcUrls": [
+            "https://ethereum-sepolia-rpc.publicnode.com",
+            "https://rpc.sepolia.ethpandaops.io",
+            "https://sepolia.rpc.sentio.xyz"
+          ],
+          "nativeCurrency": {
+            "name": "Sepolia Ether",
+            "symbol": "ETH",
+            "decimals": 18
+          },
+          "blockExplorerUrls": [
+            "https://sepolia.etherscan.io"
+          ]
+        }
+      ]
+    },
+    {
+      "step": "approve + contribute confirmed",
+      "sent": [
+        [
+          "approve",
+          [
+            "0x9E9011be976BA5E9816D78119A25Fe9557350F62",
+            "9000000000000000000"
+          ]
+        ],
+        [
+          "contribute",
+          [
+            "0",
+            "0",
+            "9000000000000000000"
+          ]
+        ]
+      ]
+    },
+    {
+      "step": "step buttons after contribute",
+      "stepButtons": [
+        {
+          "text": "Step 1: Approve MTCH",
+          "disabled": false,
+          "className": "button button-secondary"
+        },
+        {
+          "text": "Step 2: Contribute",
+          "disabled": false,
+          "className": "button button-secondary"
+        }
+      ],
+      "amountValue": ""
+    },
+    {
+      "step": "step 2 computed state",
+      "hover": false,
+      "focus": false,
+      "focusVisible": false,
+      "active": false,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(28, 28, 26)",
+      "opacity": "1",
+      "outline": "none 3px"
+    },
+    {
+      "step": "step 2 after moving the mouse away and blurring",
+      "hover": false,
+      "focusVisible": false,
+      "bg": "rgb(255, 255, 255)",
+      "color": "rgb(28, 28, 26)"
+    },
+    {
+      "step": "screenshot desktop-connected-after-contribute.jpg",
+      "bytes": 264058
+    },
+    {
+      "step": "axe connected-1280",
+      "violations": 0,
+      "passes": 49,
+      "incomplete": 1
+    },
+    {
+      "step": "inline validation error",
+      "text": "At least 1 MTCH per payment.",
+      "ariaInvalid": "true"
+    },
+    {
+      "step": "finalize + claim confirmed",
+      "sent": [
+        [
+          "finalize",
+          [
+            "1"
+          ]
+        ],
+        [
+          "claim",
+          [
+            "1",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "step": "activity list from logs",
+      "items": [
+        "RoundCreated by 0x1111…1111 View transaction",
+        "Registered project #0 paying 0x1111…1111 View transaction",
+        "Registered project #1 paying 0x2222…2222 View transaction",
+        "Finalized pool 30 MTCH allocated View transaction",
+        "Claimed 34 MTCH for project #0 View transaction"
+      ]
+    },
+    {
+      "step": "screenshot phone-320-connected.jpg",
+      "bytes": 237879
+    },
+    {
+      "step": "prefers-reduced-motion emulated",
+      "matches": true
+    },
+    {
+      "step": "live read against Sepolia",
+      "outcome": "No rounds yet",
+      "rate": "Current rate: 0.01 ETH ≈ 495,993.9357… MTCH (quoter read, before slippage)",
+      "rateLater": "Current rate: 0.01 ETH ≈ 495,993.9357… MTCH (quoter read, before slippage)",
+      "block": "Block 11791738",
+      "rpcHits": [
+        "200 https://ethereum-sepolia-rpc.publicnode.com/"
+      ],
+      "noWalletText": "No browser wallet found. Install a wallet extension such as MetaMask or Rabby, then reload this page. Reads below still work without one."
+    },
+    {
+      "step": "screenshot desktop-live-sepolia.jpg",
+      "bytes": 150771
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "axe": {
+    "disconnected-1280": {
+      "violations": [],
+      "passes": 47,
+      "incomplete": []
+    },
+    "connected-1280": {
+      "violations": [],
+      "passes": 49,
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  },
+  "live": {
+    "outcome": "No rounds yet",
+    "rate": "Current rate: 0.01 ETH ≈ 495,993.9357… MTCH (quoter read, before slippage)",
+    "rateLater": "Current rate: 0.01 ETH ≈ 495,993.9357… MTCH (quoter read, before slippage)",
+    "block": "Block 11791738",
+    "rpcHits": [
+      "200 https://ethereum-sepolia-rpc.publicnode.com/"
+    ],
+    "noWalletText": "No browser wallet found. Install a wallet extension such as MetaMask or Rabby, then reload this page. Reads below still work without one."
+  }
+}
